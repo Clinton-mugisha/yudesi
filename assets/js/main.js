@@ -111,7 +111,32 @@
    * Initiate glightbox
    */
   const glightbox = GLightbox({
-    selector: '.glightbox'
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    autoplayVideos: true,
+    preload: true,
+    zoomable: true,
+    draggable: true,
+    openEffect: 'fade',
+    closeEffect: 'fade',
+    slideEffect: 'slide',
+    moreLength: 0,
+    moreText: 'See more',
+    cssEfects: {
+      fade: {
+        in: 'fadeIn',
+        out: 'fadeOut'
+      },
+      zoom: {
+        in: 'zoomIn',
+        out: 'zoomOut'
+      },
+      slide: {
+        in: 'slideIn',
+        out: 'slideOut'
+      }
+    }
   });
 
   /**
